@@ -17,14 +17,14 @@ app.get("/", function(req, res) {
 
   const day = date.getDate();
 
-  res.render("list", {
+  res.render("index", {
     listTitle: day,
     listItems: listItems
   });
 });
 
 app.get("/work", function(req, res){
-  res.render("list", {
+  res.render("index", {
     listTitle: "Work List",
     listItems: workItems});
 });
